@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>YOUTUBE UI Clone</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.tailwindcss.com/2.2.15/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-black overflow-y-hidden">
+
+    <!-- main div containing two large div -->
+    <div class="flex  flex-col h-screen  border-zinc-300 border-2">
+
+      <!-- top navbar -->
+
+      <div class="flex  left-0 right-0 top-0  justify-between items-center">
+        <div class=" flex justify-between items-center">
+          <span
+          class="material-symbols-outlined cursor-pointer text-stone-300 hover:bg-gray-700 rounded-full p-2 m-2"
+          >menu</span
+        > 
+
+        <img src="/images/icons8-youtube-36.png" alt=""><span class=" text-white font-bold text-xl">YouTube</span>
+        </div>
+<!-- search div -->
+        <div class="hidden items-center md:flex  outline-none border-none sm:min-w-[200px] min-w-[300px] lg:min-w-[620px]">
+         
+          <input type="text" placeholder="Search" class="hidden md:flex px-4 py-2 w-full border-[1px] border-zinc-300  text-zinc-200 focus:bg-transparent bg-transparent rounded-tl-full rounded-bl-full  focus:outline-none  focus:ring-sky-500 focus:ring-[1px]">
+          <div class="items-center bg-zinc-700 flex rounded-tr-full rounded-br-full px-5 py-2">
+            <span
+            class="material-symbols-outlined items-center  cursor-pointer text-stone-300 rounded-full"
+            >Search</span
+          > 
+
+         
+          </div>
+          <span
+          class="material-symbols-outlined bg-zinc-700  ml-5 p-2 rounded-full relative cursor-pointer text-stone-300 rounded-full"
+          >mic</span
+        > 
+        </div>
+
+        <!-- search div ends -->
+
+        <!-- icons for mobile navbar -->
+        <div class="md:hidden flex items-center">
+          <div class="flex justify- items-center ">
+          <div >
+            <span
+            class="material-symbols-outlined md:hidden hover:bg-zinc-700 ml-2 p-2 rounded-full relative cursor-pointer text-stone-300 rounded-full"
+            >Search</span
+          > 
+       
+   
+            <span
+            class="material-symbols-outlined hidden md:flex hover:bg-zinc-700 p-2 rounded-full relative cursor-pointer text-stone-300 rounded-full"
+            >mic</span
+          > 
+          </div>
+         
+          <div class="justify-around flex">
+            <span
+            class="material-symbols-outlined hover:bg-zinc-700 p-2 rounded-full relative cursor-pointer text-stone-300 rounded-full"
+            >videocam</span
+          > 
+    
+          <span
+          class="material-symbols-outlined hover:bg-zinc-400 p-2 rounded-full relative cursor-pointer text-stone-300 rounded-full"
+          >notifications</span
+        > 
+    <div class="flex ">
+      <img  src="/images/ayodeji.jpg" alt="profile picture "class=" selecting rounded-full object-contain w-10 md:ml-2 cursor-pointer   border-transparent " >
+    </div>
+        
+          </div>
+        </div>
+       
+        </div>
+<!-- icon for mobile ends -->
+<div></div>
+<!-- icon for laptop starts -->
+        <div class="md:flex hidden ">
+
+          <div>
+            <span
+          class="material-symbols-outlined hover:bg-zinc-700 p-2 rounded-full relative cursor-pointer text-stone-300 rounded-full"
+          >videocam</span
+        > 
+          </div>
+          <div>
+            <span
+          class="material-symbols-outlined hover:bg-zinc-400 p-2 rounded-full relative cursor-pointer text-stone-300 rounded-full"
+          >notifications</span
+        > 
+          </div>
+
+          <div class="flex  ">
+            <img  src="/images/ayodeji.jpg" alt="profile picture "class="selecting rounded-full object-contain w-10 ml-2 cursor-pointer   border-transparent " >
+          </div>
+        </div>
+      </div>
+      <!-- top navbar ends -->
+
+      <!-- Main body starts -->
+
+      <div class="flex  fixed relative h-screen  border-2 border-orange-200 ">
+
+        <!-- start of side bar -->
+
+        <div class="text-white  overflow-x-hidden bg-black overflow-y-hidden hover:overflow-y-auto w-12 lg:w-2/12 mt-4  left-0 right-0 ">
+<!-- start of icon div -->
+       <div class="flex flex-col lg:w-10/12 my-2 cursor-pointer  gap-1 hover:bg-gray-500 rounded-md lg:flex-row items-center lg:bg-gray-500  lg:py-1 lg:px-4 p-4 ">
+            <div>
+
+              <i class="material-icons   relative cursor-pointer text-stone-300 " >home</i>
+        
+          </div>
+            <div> 
+            <p class="text-[10px] lg:pl-4 lg:text-[15px] font-semibold">Home</p>
+        </div>
+          
+       </div>
+<!-- end of icon div -->
+
+<!-- start  -->
+
+<div class="flex flex-col  lg:w-10/12 my-2 cursor-pointer   gap-1 lg:hover:bg-gray-500 hover:bg-gray-500 rounded-md lg:flex-row items-center  lg:py-1 lg:px-4 p-4 ">
+  <div>
+
+    <i class="material-icons   relative cursor-pointer text-stone-300 " >subscriptions</i>
+
+</div>
+  <div> 
+  <p class="text-[10px] lg:pl-4 lg:text-[15px] font-semibold">Subscribe</p>
+</div>
+
+</div>
+ 
+<!-- end -->
+
+<!-- start -->
+<div class="flex flex-col  lg:w-10/12 my-2 cursor-pointer  gap-1 lg:hover:bg-gray-500 hover:bg-gray-500 rounded-md lg:flex-row items-center  lg:py-1 lg:px-4 p-4 ">
+  <div>
+
+    <i class="material-icons   relative cursor-pointer text-stone-300 " >subscriptions</i>
+
+</div>
+  <div> 
+  <p class="text-[10px] lg:pl-4 lg:text-[15px] font-semibold">Shorts</p> 
+</div>
+
+</div>
+<!-- end -->
+
+<!-- start -->
+<div class="flex flex-col  lg:w-10/12 my-2 cursor-pointer  gap-1 lg:hover:bg-gray-500 hover:bg-gray-500 rounded-md lg:flex-row items-center  lg:py-1 lg:px-4 p-4 ">
+  <div>
+
+    <i class="material-icons   relative cursor-pointer text-stone-300 " >videocam</i>
+
+</div>
+  <div> 
+  <p class="text-[10px] lg:pl-4 lg:text-[15px] font-semibold">Library</p> 
+</div>
+
+</div>
+
+<!-- end -->
+           <hr class="hidden lg:flex text-gray-700 mx-3">
+
+           <!-- start -->
+           <div class=" hidden lg:flex flex-col  lg:w-10/12 my-2 cursor-pointer  gap-1 lg:hover:bg-gray-500 hover:bg-gray-500 rounded-md lg:flex-row items-center  lg:py-1 lg:px-4 p-4 ">
+            <div>
+          
+              <i class="material-icons   relative cursor-pointer text-stone-300 " >subscriptions</i>
+          
+          </div>
+            <div> 
+            <p class="text-[10px] lg:pl-4 lg:text-[15px] font-semibold">History</p> 
+          </div>
+          
+          </div>
+          
+           <!-- end -->
+
+           <!-- start -->
+           <div class="hidden lg:flex flex-col  lg:w-10/12 my-2 cursor-pointer  gap-1 lg:hover:bg-gray-500 hover:bg-gray-500 rounded-md lg:flex-row items-center  lg:py-1 lg:px-4 p-4 ">
+            <div>
+          
+              <i class="material-icons   relative cursor-pointer text-stone-300 " >videocam</i>
+          
+          </div>
+            <div> 
+            <p class="text-[10px] lg:pl-4 lg:text-[15px] font-semibold">Your Videos</p> 
+          </div>
+          
+          </div>
+      
+           <!-- end -->
+
+           <!-- start  -->
+           <div class="hidden lg:flex flex-col  lg:w-10/12 my-2 cursor-pointer  gap-1 lg:hover:bg-gray-500 hover:bg-gray-500 rounded-md lg:flex-row items-center  lg:py-1 lg:px-4 p-4 ">
+            <div>
+          
+              <i class="material-icons   relative cursor-pointer text-stone-300 " >subscriptions</i>
+          
+          </div>
+            <div> 
+            <p class="text-[10px] lg:pl-4 lg:text-[15px] font-semibold">Watch later</p> 
+          </div>
+          
+          </div>
+          
+           <!-- end -->
+
+           <!-- start -->
+           <div class="hidden lg:flex flex-col  lg:w-10/12 my-2 cursor-pointer  gap-1 lg:hover:bg-gray-500 hover:bg-gray-500 rounded-md lg:flex-row items-center  lg:py-1 lg:px-4 p-4 ">
+            <div>
+          
+              <i class="material-icons   relative cursor-pointer text-stone-300 " >thumb_up</i>
+          
+          </div>
+            <div> 
+            <p class="text-[10px] lg:pl-4 lg:text-[15px] font-semibold">Liked Videos</p> 
+          </div>
+          
+          </div>
+          
+           <!-- end -->
+
+           <!-- start -->
+           <div class="hidden lg:flex flex-col  lg:w-10/12 my-2 cursor-pointer  gap-1 lg:hover:bg-gray-500 hover:bg-gray-500 rounded-md lg:flex-row items-center  lg:py-1 lg:px-4 p-4 ">
+            <div>
+          
+              <i class="material-icons   relative cursor-pointer text-stone-300 " >subscriptions</i>
+          
+          </div>
+            <div> 
+            <p class="text-[10px] lg:pl-4 lg:text-[15px] font-semibold">Coding Videos</p> 
+          </div>
+          
+          </div>
+          
+           <!-- end -->
+<hr class="hidden lg:flex text-gray-700 m-3">
+
+
+ <!-- start -->
+ <div class="hidden lg:flex flex-col  lg:w-10/12 my-2 cursor-pointer  gap-1 lg:hover:bg-gray-500 hover:bg-gray-500 rounded-md lg:flex-row items-center  lg:py-1 lg:px-4 p-4 ">
+  <div>
+
+    <i class="material-icons   relative cursor-pointer text-stone-300 " >trending_up</i>
+
+</div>
+  <div> 
+  <p class="text-[10px] lg:pl-4 lg:text-[15px] font-semibold">Trending</p> 
+</div>
+
+</div>
+
+ <!-- end -->
+ <!-- start -->
+ <div class="hidden lg:flex flex-col  lg:w-10/12 my-2 cursor-pointer  gap-1 lg:hover:bg-gray-500 hover:bg-gray-500 rounded-md lg:flex-row items-center  lg:py-1 lg:px-4 p-4 ">
+  <div>
+
+    <i class="material-icons   relative cursor-pointer text-stone-300 " >trending_up</i>
+
+</div>
+  <div> 
+  <p class="text-[10px] lg:pl-4 lg:text-[15px] font-semibold">Trending</p> 
+</div>
+
+</div>
+
+ <!-- end -->
+
+
+  <!-- start -->
+  <div class="hidden lg:flex flex-col  lg:w-10/12 my-2 cursor-pointer  gap-1 lg:hover:bg-gray-500 hover:bg-gray-500 rounded-md lg:flex-row items-center  lg:py-1 lg:px-4 p-4 ">
+    <div>
+  
+      <i class="material-icons   relative cursor-pointer text-stone-300 " >music_note</i>
+  
+  </div>
+    <div> 
+    <p class="text-[10px] lg:pl-4 lg:text-[15px] font-semibold">Music</p> 
+  </div>
+  
+  </div>
+  
+   <!-- end -->
+
+ <!-- start -->
+ <div class="hidden lg:flex flex-col  lg:w-10/12 my-2 cursor-pointer  gap-1 lg:hover:bg-gray-500 hover:bg-gray-500 rounded-md lg:flex-row items-center  lg:py-1 lg:px-4 p-4 ">
+  <div>
+
+    <i class="material-icons   relative cursor-pointer text-stone-300 " >trending_up</i>
+
+</div>
+  <div> 
+  <p class="text-[10px] lg:pl-4 lg:text-[15px] font-semibold">Trending</p> 
+</div>
+
+</div>
+
+ <!-- end -->
+
+
+ <!-- start -->
+ <div class="hidden lg:flex flex-col  lg:w-10/12 my-2 cursor-pointer  gap-1 lg:hover:bg-gray-500 hover:bg-gray-500 rounded-md lg:flex-row items-center  lg:py-1 lg:px-4 p-4 ">
+  <div>
+
+    <i class="material-icons   relative cursor-pointer text-stone-300 " >trending_up</i>
+
+</div>
+  <div> 
+  <p class="text-[10px] lg:pl-4 lg:text-[15px] font-semibold">Trending</p> 
+</div>
+
+</div>
+
+ <!-- end -->
+
+
+ <!-- start -->
+ <div class="hidden lg:flex flex-col  lg:w-10/12 my-2 cursor-pointer  gap-1 lg:hover:bg-gray-500 hover:bg-gray-500 rounded-md lg:flex-row items-center  lg:py-1 lg:px-4 p-4 ">
+  <div>
+
+    <i class="material-icons   relative cursor-pointer text-stone-300 " >trending_up</i>
+
+</div>
+  <div> 
+  <p class="text-[10px] lg:pl-4 lg:text-[15px] font-semibold">Trending</p> 
+</div>
+
+</div>
+
+ <!-- end -->
+
+
+ <!-- start -->
+ <div class="hidden lg:flex flex-col  lg:w-10/12 my-2 cursor-pointer  gap-1 lg:hover:bg-gray-500 hover:bg-gray-500 rounded-md lg:flex-row items-center  lg:py-1 lg:px-4 p-4 ">
+  <div>
+
+    <i class="material-icons   relative cursor-pointer text-stone-300 " >trending_up</i>
+
+</div>
+  <div> 
+  <p class="text-[10px] lg:pl-4 lg:text-[15px] font-semibold">Trending</p> 
+</div>
+
+</div>
+
+ <!-- end -->
+
+
+ <!-- start -->
+ <div class="hidden lg:flex flex-col  lg:w-10/12 my-2 cursor-pointer  gap-1 lg:hover:bg-gray-500 hover:bg-gray-500 rounded-md lg:flex-row items-center  lg:py-1 lg:px-4 p-4 ">
+  <div>
+
+    <i class="material-icons   relative cursor-pointer text-stone-300 " >trending_up</i>
+
+</div>
+  <div> 
+  <p class="text-[10px] lg:pl-4 lg:text-[15px] font-semibold">Trending</p> 
+</div>
+
+</div>
+
+ <!-- end -->
+
+
+  <!-- start -->
+  <div class="hidden lg:flex flex-col  lg:w-10/12 my-2 cursor-pointer  gap-1 lg:hover:bg-gray-500 hover:bg-gray-500 rounded-md lg:flex-row items-center  lg:py-1 lg:px-4 p-4 ">
+    <div>
+  
+      <i class="material-icons   relative cursor-pointer text-stone-300 " >music_note</i>
+  
+  </div>
+    <div> 
+    <p class="text-[10px] lg:pl-4 lg:text-[15px] font-semibold">Music</p> 
+  </div>
+  
+  </div>
+  
+   <!-- end -->
+
+    <!-- start -->
+    <div class="hidden lg:flex flex-col  lg:w-10/12 my-2 cursor-pointer  gap-1 lg:hover:bg-gray-500 hover:bg-gray-500 rounded-md lg:flex-row items-center  lg:py-1 lg:px-4 p-4 ">
+      <div>
+    
+        <i class="material-icons   relative cursor-pointer text-stone-300 " >sports_esports</i>
+    
+    </div>
+      <div> 
+      <p class="text-[10px] lg:pl-4 lg:text-[15px] font-semibold">Games</p> 
+    </div>
+    
+    </div>
+    
+     <!-- end -->
+
+     <!-- start -->
+    <div class="hidden lg:flex flex-col  lg:w-10/12 my-2 cursor-pointer  gap-1 lg:hover:bg-gray-500 hover:bg-gray-500 rounded-md lg:flex-row items-center  lg:py-1 lg:px-4 p-4 ">
+      <div>
+    
+        <i class="material-icons   relative cursor-pointer text-stone-300 " >article</i>
+    
+    </div>
+      <div> 
+      <p class="text-[10px] lg:pl-4 lg:text-[15px] font-semibold">News</p> 
+    </div>
+    
+    </div>
+    
+     <!-- end -->
+
+
+     <!-- start -->
+    <div class="hidden lg:flex flex-col  lg:w-10/12 my-2 cursor-pointer  gap-1 lg:hover:bg-gray-500 hover:bg-gray-500 rounded-md lg:flex-row items-center  lg:py-1 lg:px-4 p-4 ">
+      <div>
+    
+        <i class="material-icons   relative cursor-pointer text-stone-300 " >sports_soccer</i>
+    
+    </div>
+      <div> 
+      <p class="text-[10px] lg:pl-4 lg:text-[15px] font-semibold">Sports</p> 
+    </div>
+    
+    </div>
+    
+     <!-- end -->
+
+           
+        </div>
+        <!-- end of side bar -->
+
+
+        <!--  start of Main Page -->
+<!-- start of video section -->
+        <div class="text-white fixed h-screen  border-2 flex-1  left-16 lg:left-64  flex right-0 border-stone-800">
+          <!-- div for video content -->
+        
+          <div class="flex flex-wrap  bg-gray-500 rounded-md top-12 mx-auto border-orange-500 w-screen border-2 relative">
+
+            <!-- video div wrapper -->
+            <div class="w-full sm:w-1/2 flex  flex-col md:w-1/2 lg:w-1/3 xl:w-1/3">
+            <!-- div for video -->
+            <div class="rounded-md mx-auto">
+              <iframe width="360" height="200" class="rounded-lg mx-auto " src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+            </div>
+              <!--image and text wrapper -->
+              <div class="flex mx-auto">
+                <!-- image div -->
+                <div>
+                  dfgadf
+                </div>
+                  <!-- text div -->
+                  <div>
+
+                  </div>
+              </div>
+
+            </div>
+
+
+
+            <!-- video div wrapper -->
+            <div class="w-full sm:w-1/2 flex flex-col md:w-1/2 lg:w-1/3 xl:w-1/3">
+              <!-- div for video -->
+              <div class="rounded-md mx-auto">
+                <iframe width="" height="200" class="rounded-lg mx-auto" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+              </div>
+                <!--image and text wrapper -->
+                <div class="flex mx-auto">
+                  <!-- image div -->
+                  <div>
+                    dfgadf
+                  </div>
+                    <!-- text div -->
+                    <div>
+  
+                    </div>
+                </div>
+  
+              </div>
+  
+
+              
+              <!-- video div wrapper -->
+            <div class="w-full sm:w-1/2 flex flex-col md:w-1/2 lg:w-1/3 xl:w-1/3">
+              <!-- div for video -->
+              <div class="rounded-md mx-auto">
+                <iframe width="" height="200" class="rounded-lg mx-auto" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+              </div>
+                <!--image and text wrapper -->
+                <div class="flex mx-auto bg-orange-300">
+                  <!-- image div -->
+                  <div >
+                    dfgadf
+                  </div>
+                    <!-- text div -->
+                    <div>
+  
+                    </div>
+                </div>
+  
+              </div>
+  
+  
+            <!-- video div wrapper -->
+            <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3">
+              <!-- div for video -->
+              <div class="rounded-md mx-auto">
+                <iframe width="" height="200" class="rounded-lg mx-auto" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+              </div>
+              </div>
+
+              <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3">
+                <!-- div for video -->
+                <div class="rounded-md mx-auto">
+                  <iframe width="360" height="200" class="rounded-lg mx-auto" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                </div>
+                </div>
+
+                <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3">
+                  <!-- div for video -->
+                  <div class="rounded-md mx-auto">
+                    <iframe width="360" height="200" class="rounded-lg mx-auto" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                  </div>
+                  </div>
+
+                  <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3">
+                    <!-- div for video -->
+                    <div class="rounded-md mx-auto">
+                      <iframe width="360" height="200" class="rounded-lg mx-auto" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                    </div>
+                    </div>
+
+                    <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3">
+                      <!-- div for video -->
+                      <div class="rounded-md mx-auto">
+                        <iframe width="360" height="200" class="rounded-lg mx-auto" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                      </div>
+                      </div>
+
+
+            <!-- <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/3"> -->
+              <!-- <div class="rounded-md"> -->
+              <!-- <iframe width="420" height="345" class="rounded-lg" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe> -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="w-full md:w-1/2 lg:w-1/3 xl:w-1/3"> -->
+                  <!-- <div class="rounded-md"> -->
+              <!-- <iframe width="420" height="345" class="rounded-lg" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe> -->
+            </div>
+            </div>
+          </div>
+          
+
+
+
+
+ 
+
+  
+        </div>
+
+      
+         <!-- end of video section -->
+
+      </div>
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
