@@ -4,7 +4,7 @@ const container = document.querySelector('.flex');
 
 scrollLeftBtn.addEventListener('click', () => {
   container.scrollBy({
-    left: -100,
+    left: -75,
     behavior: 'smooth'
   });
 });
